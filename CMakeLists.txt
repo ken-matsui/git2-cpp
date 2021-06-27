@@ -5,9 +5,10 @@ project(git2-cpp
         )
 
 include(GNUInstallDirs)
-set(CMAKE_VERBOSE_MAKEFILE ON)
 
-message(STATUS "CMAKE_INSTALL_PREFIX: ${CMAKE_INSTALL_PREFIX}")
+if (CMAKE_VERBOSE_MAKEFILE)  # set(CMAKE_VERBOSE_MAKEFILE ON)
+    message(STATUS "CMAKE_INSTALL_PREFIX: ${CMAKE_INSTALL_PREFIX}")
+endif ()
 add_library(${PROJECT_NAME} INTERFACE)
 add_library(${PROJECT_NAME}::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
 target_compile_features(${PROJECT_NAME} INTERFACE cxx_std_17)
