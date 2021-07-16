@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.8)
 project(git2-cpp
-        VERSION 0.0.1
+        VERSION 0.1.0
         LANGUAGES CXX
         )
 
