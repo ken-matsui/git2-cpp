@@ -1,6 +1,7 @@
 #ifndef GIT2_OID_HPP
 #define GIT2_OID_HPP
 
+#include <iostream>
 #include <memory>
 #include <string>
 #include <git2/oid.h>
